@@ -15,3 +15,9 @@
   left: 0;
   z-index: -1;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

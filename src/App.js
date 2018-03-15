@@ -114,11 +114,14 @@ class App extends Component {
     return (
       <div className="App">
         <Particles className="particules" params={particulesOptions} />
+        <div className="navbar">
+        <Logo /> 
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
+        </div>
         { this.state.route === 'home' 
         ? <div>
             
-            <Logo /> 
+            
             <Rank name={this.state.user.name} entries={this.state.user.entries} />
             <ImageLinkForm onInputChange = {this.onInputChange} onButtonSubmit={this.onButtonSubmit} />
             <FaceRecognition box={box} imageURL = {imageURL} />
